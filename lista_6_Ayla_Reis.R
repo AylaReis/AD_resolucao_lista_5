@@ -15,3 +15,15 @@
 ### c) Apresente qual a relação existente entre variáveis independentes e dependente ###
 ## A relação é de que o valor da várivel dependente está vulnerável aos valores das variáveis
 ## independentes, ou seja, os "X"s  influenciará no valor de "Y". ## 
+
+
+#### Exercício 2: Em análise de dados, qual o nome dado à equação abaixo?#### 
+## Modelo de regressão amostral.
+
+
+#### Exercício 3: Com suas palavras, apresente uma definição para cada um dos componentes
+#### da equação apresentada no exercício 2. ####
+
+## Yi: é a variável dependente de "X"
+
+## ˆα: 
