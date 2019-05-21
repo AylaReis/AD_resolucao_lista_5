@@ -139,17 +139,17 @@ if(require("tidyverse") == F) install.packages("tidyverse") ; require("tidyverse
 setwd("/Users/reis/Desktop/AYLA/UFPE/analise_de_dados_pos_graduacao_davi_moreira/lista_6/AD_resolucao_lista_6")
 getwd()
 load("vote_growth_usa.RData")
-votegroWth <- bd
+votegrowth <- bd
 rm (bd)
 
-summary(votegroWth)
+summary(votegrowth)
 
 
 # Modelo de regressão bivariada
 regl <- lm(Vote ~ Growth, data = votegroWth)
 summary(regl)
 
-ggplot(votegroWth,
+ggplot(votegrowth,
        aes(Vote, Growth)) + geom_point() + geom_smooth(method = "lm")
 
 
