@@ -2,6 +2,7 @@
 ######### Resolução da lista 6 - Análise de dados - UFPE - 2019.1 #######
 ################## Aluna: Ayla Reis de Lima  ############################
 
+###### Endereço do GitHub: https://github.com/AylaReis/AD_resolucao_lista_6 #####
 
 #### Exercício 1: Descreva os conceitos abaixo: 
 
@@ -129,11 +130,32 @@
 #### está para ser realizado em cada etapa do seu script.
 
 
-#### Exercício 10: 
-# Definindo diretório
+#### Exercício 10:Com os dados disponibilizados na plataforma (vote_growth_usa.RData),
+#### reproduza os resultados do livro Kellstedt, P. M., & Whitten, G. D. (2013)
+#### utilizando o código apresentado nos slides da aula. 
+
+# Instalando pacote, definindo diretório e carregando base de dados primária
 if(require("tidyverse") == F) install.packages("tidyverse") ; require("tidyverse")
-setwd("Users/reis/Desktop/AYLA/UFPE/analise_de_dados_pos_graduacao_davi_moreira/lista_6/AD_resolucao_lista_6")
-load(vote_growth_usa.RData)
+setwd("/Users/reis/Desktop/AYLA/UFPE/analise_de_dados_pos_graduacao_davi_moreira/lista_6/AD_resolucao_lista_6")
+getwd()
+load("vote_growth_usa.RData")
+votegroWth <- bd
+rm (bd)
+
+summary(votegroWth)
+
+
+# Modelo de regressão bivariada
+regl <- lm(Vote ~ Growth, data = votegroWth)
+summary(regl)
+
+ggplot(votegroWth,
+       aes(Vote, Growth)) + geom_point() + geom_smooth(method = "lm")
+
+
+#### Exercício 11: Com os dados e as variáveis do exercício 10, realize uma análise de 
+#### regressão considerando apenas o período de 1876 a 1932. Apresente os resultados e os
+#### compare quanto ao modelo completo (exercício 10) em relação a: 
 
 
 
