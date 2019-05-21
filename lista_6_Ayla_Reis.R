@@ -1,8 +1,10 @@
 
 ######### Resolução da lista 6 - Análise de dados - UFPE - 2019.1 #######
+################## Professor: Davi Moreira ##############################
 ################## Aluna: Ayla Reis de Lima  ############################
-
 ###### Endereço do GitHub: https://github.com/AylaReis/AD_resolucao_lista_6 #####
+
+##### Questões resolvidas: 1-8 e 10 #####
 
 #### Exercício 1: Descreva os conceitos abaixo: 
 
